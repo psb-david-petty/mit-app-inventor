@@ -20,4 +20,4 @@ All components retain their default properties, &mdash; except `Width` and `Heig
 
 <hr>
 
-[https://psb-david-petty.github.io/mit-app-inventor/ImageSize/](https://psb-david-petty.github.io/mit-app-inventor/ImageSize/) is the repository.
+[:nut_and_bolt: repository](https://github.com/psb-david-petty/mit-app-inventor/tree/master/ImageSize) and [&#128279; permalink](https://psb-david-petty.github.io/mit-app-inventor/ImageSize/) for this page.
