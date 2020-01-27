@@ -14,7 +14,7 @@
 
 There were a couple things to learn about continuous speech recogntion in non-legacy mode:
 
-In `SecretWord` I also explored how to write scaled text on a `Canvas` &mdash; embodied in the `display` procedure.
+In `SecretWord` I also explored how to write scaled text on a `Canvas` &mdash; embodied in the `display` procedure (including a description of [font sizes](http://iamvdo.me/en/blog/css-font-metrics-line-height-and-vertical-align#lets-talk-about-font-size-first)).
 
 ![display procedure blocks](./display.png)
 
