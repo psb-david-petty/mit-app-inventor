@@ -5,6 +5,7 @@ Sample MIT App Inventor projects
 | Link | Description |
 | -- | -- |
 [./ImageSize](./ImageSize) | The `ImageSize` app demonstrates the delay between changing the size of an `Image` or `Canvas` and the dimensions actually changing. |
+[./RecursionTemplate](./RecursionTemplate) | The `RecursionTemplate` app is a template for implementing recursive functions to calulate *factorial*, *Fibonacci number*, and *combinations*. |
 [./SecretWord](./SecretWord) | The `SecretWord` app is a speech-recognition app that mirrors the *secret word* of **[You Bet Your Life](https://en.wikipedia.org/wiki/You_Bet_Your_Life)** (1950&ndash;1960) with Groucho Marx. |
 
 <hr>
