@@ -2,7 +2,7 @@
 
 ## About this app
 
-The `RecursionTemplate` app is a template for implementing recursive functions to calulate *factorial*, *Fibonacci* number, and *combinations*. The default return value (before implementing each function) is `n`. Move sliders to recursively calculate `factorial(n)`, `fibonacci(n)`, and `C(n, k)`.
+The `RecursionTemplate` app is a template for implementing recursive procedures to calulate *factorial*, *Fibonacci* number, and *combinations*. The default return value (before implementing each function) is `n`. Move sliders to recursively calculate `factorial(n)`, `fibonacci(n)`, and `C(n, k)`.
 
 ## Code
 
@@ -16,7 +16,7 @@ The `RecursionTemplate` app is a template for implementing recursive functions t
   - **The base case** &mdash; results of the procedure / algorithm calculated without recurring.
   - **The inductive step** &mdash; the recursive call with input(s) one step closer to the base case.
 
-The template is for implementing recursive functions to calulate *factorial*, *Fibonacci* number, and *combinations* defined as follows:
+The template is for implementing recursive procedures to calulate *factorial*, *Fibonacci* number, and *combinations* defined as follows:
 
 | Description | Definition |
 | -- | -- |
