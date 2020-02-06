@@ -6,7 +6,7 @@
 
 ## Code
 
-![SecretWord blocks](./SecretWord.png)
+[![SecretWord blocks](./SecretWord.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/SecretWord/SecretWord.png)
 
 - The *Secret Word* `Button` saves the text in the `TextBox` as the *secret word*..
 - The *Stop* `Button` stops the `SpeechRecognizer`.
@@ -20,7 +20,7 @@ There were a couple things to learn about continuous speech recogntion in non-le
 
 `SecretWord` also explores how to write scaled text on a `Canvas` &mdash; embodied in the `display` procedure. 
 
-![display procedure blocks](./display.png)
+[![display procedure blocks](./display.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/SecretWord/display.png)
 
 Vincent De Oliveira (aka iamvdo) describes [font-size](http://iamvdo.me/en/blog/css-font-metrics-line-height-and-vertical-align#lets-talk-about-font-size-first), including how the font metrics define the em-square. The default font (`sans-serif`) has an em-square and `FontSize` that is 110% of the `Canvas` `width` divided by the length of the secret word. It is centered on the `Canvas` (with `TextAlign` centered) and surrounded by a rectangle one em-square tall and length-of-the-secret-word em-squares wide &mdash; clipped to the `Canvas` borders. The text is <span style="color: red;">red</span> within a black rectangle filled with white.
 
