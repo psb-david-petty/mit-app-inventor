@@ -6,7 +6,7 @@ The `ImageSize` app demonstrates the delay between changing the size of an `Imag
 
 ## Code
 
-![ImageSize blocks](./ImageSize.png)
+[![ImageSize blocks](./ImageSize.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/ImageSize/ImageSize.png)
 
 - The *Reset* `Button` sets the `Width` and `Height` properties to `Automatic...` (`-1`) and sets the smaller background image.
 - The *Toggle* `Button`toggles the background image and displays the `Image` dimensions. Then, one second later, redisplays the `Image` dimensions.
