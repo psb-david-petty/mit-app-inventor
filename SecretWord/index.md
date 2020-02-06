@@ -22,7 +22,7 @@ There were a couple things to learn about continuous speech recogntion in non-le
 
 ![display procedure blocks](./display.png)
 
-Vincent De Oliveira (aka iamvdo) describes [font-size](http://iamvdo.me/en/blog/css-font-metrics-line-height-and-vertical-align#lets-talk-about-font-size-first), including how the font metrics define the em-square. The default font (`sans-serif`) has an em-square and spacing that is 110% of the `Canvas` `width` divided by the length of the secret word. **More TK**.
+Vincent De Oliveira (aka iamvdo) describes [font-size](http://iamvdo.me/en/blog/css-font-metrics-line-height-and-vertical-align#lets-talk-about-font-size-first), including how the font metrics define the em-square. The default font (`sans-serif`) has an em-square and `FontSize` that is 110% of the `Canvas` `width` divided by the length of the secret word. It is centered on the `Canvas` (with `TextAlign` centered) and surrounded by a rectangle one em-square tall and length-of-the-secret-word em-squares wide &mdash; clipped to the `Canvas` borders. The text is <span style="color: red;">red</span> within a black rectangle filled with white.
 
 ## Designer
 
