@@ -8,17 +8,22 @@
 
 [![CaesarVigenereCipher template blocks](./CaesarVigenereCipher.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/CaesarVigenereCipher/CaesarVigenereCipher.png)
 
-This is a *template* app, with [stubs](http://catb.org/jargon/html/S/stubroutine.html) for `caesar` and `vigenere`, the actual encrypt / decrypt procedures.
+This is a *template* app, with [stubs](http://catb.org/jargon/html/S/stubroutine.html) for `caesar` and `vigenere`, the actual encrypt / decrypt procedures, as well as `shift`.
 
-- 
+- Abstracting the `shift` procedure so that it can be called with positive or negative shifts enables it to be used for encrypting and decrypting for both the [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher) and the [Vigenère cipher](https://en.wikipedia.org/wiki/Vigenère_cipher). `shift` has...
+> Preconditions:
+>- `letter` is of length `1`
+>- `letter` is in `alphabet`
+- `caesar` shifts the `cleaned` text by a fixed amount (`shift`), positively or negatively. `alphabet` establishes the [lexicographical order](https://en.wikipedia.org/wiki/Lexicographical_order) for the letters. (`caesar` is an example of the [accumulator pattern](https://runestone.academy/runestone/books/published/thinkcspy/Functions/TheAccumulatorPattern.html).)
+- `vigenere` shifts the `cleaned` text by an amount corresponding to the letters of `key`, positively (if `direction` is `1`) or negatively (if `direction` is `-1`). `alphabet` establishes the [lexicographical order](https://en.wikipedia.org/wiki/Lexicographical_order) for the letters. (`vigenere` is an example of the [accumulator pattern](https://runestone.academy/runestone/books/published/thinkcspy/Functions/TheAccumulatorPattern.html).)
 
-As is usual with 
+As is usual with [APCSP Mobile](https://course.mobilecsp.org/) template apps, there is an existing UX and some pre-written procedures provided. The `clean` procedure is an example of the [accumulator pattern](https://runestone.academy/runestone/books/published/thinkcspy/Functions/TheAccumulatorPattern.html). It returns `text` with all characters *not* in `alphabet` removed.
 
 [![clean procedure blocks](./clean.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/CaesarVigenereCipher/clean.png)
 
 ## Designer
 
-All components retain their default properties, except the initial `Text` for the `ListPicker` is `0` on reset &mdash; except `Width` and `Height` set to `Fill parent...` where necessary to center UX components. None of the `TextBox` components are changed on reset.
+All components retain their default properties, except initial `Text` for the `ListPicker` is `0` on reset &mdash; and except `Width` and `Height` set to `Fill parent...` where necessary to center UX components. None of the `TextBox` components are changed on reset.
 
 ## Credits
 
