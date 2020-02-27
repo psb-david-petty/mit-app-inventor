@@ -1,12 +1,12 @@
-# `CaesarVigenereCipher`
+# `CaesarVigenereCipherTemplate`
 
 ## About this app
 
-`CaesarVigenereCipher` app is an enhancement to the APCSP Mobile [6.5](https://course.mobilecsp.org/mobilecsp/unit?unit=25&lesson=173) [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher) app that includes a [Vigenère cipher](https://en.wikipedia.org/wiki/Vigenère_cipher). <br><br>[https://psb-david-petty.github.io/mit-app-inventor/CaesarVigenereCipher/](https://psb-david-petty.github.io/mit-app-inventor/CaesarVigenereCipher/)
+`CaesarVigenereCipherTemplate` app is an enhancement to the APCSP Mobile [6.5](https://course.mobilecsp.org/mobilecsp/unit?unit=25&lesson=173) [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher) app that includes a [Vigenère cipher](https://en.wikipedia.org/wiki/Vigenère_cipher). <br><br>[https://psb-david-petty.github.io/mit-app-inventor/CaesarVigenereCipherTemplate/](https://psb-david-petty.github.io/mit-app-inventor/CaesarVigenereCipherTemplate/)
 
 ## Code
 
-[![CaesarVigenereCipher template blocks](./CaesarVigenereCipher.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/CaesarVigenereCipher/CaesarVigenereCipher.png)
+[![CaesarVigenereCipherTemplate blocks](./CaesarVigenereCipherTemplate.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/CaesarVigenereCipherTemplate/CaesarVigenereCipherTemplate.png)
 
 This is a *template* app, with [stubs](http://catb.org/jargon/html/S/stubroutine.html) for `caesar` and `vigenere` &mdash; the actual encrypt / decrypt procedures &mdash; as well as `shift`.
 
@@ -19,7 +19,7 @@ This is a *template* app, with [stubs](http://catb.org/jargon/html/S/stubroutine
 
 As is usual with [APCSP Mobile](https://course.mobilecsp.org/) template apps, there is an existing UX and some pre-written procedures provided. The `clean` procedure is an example of the [accumulator pattern](https://runestone.academy/runestone/books/published/thinkcspy/Functions/TheAccumulatorPattern.html). It returns `text` with all characters *not* in `alphabet` removed.
 
-[![clean procedure blocks](./clean.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/CaesarVigenereCipher/clean.png)
+[![clean procedure blocks](./clean.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/CaesarVigenereCipherTemplate/clean.png)
 
 ## Designer
 
@@ -31,4 +31,4 @@ All components retain their default properties, except initial `Text` for the `L
 
 <hr>
 
-[&#128279; permalink](https://psb-david-petty.github.io/mit-app-inventor/CaesarVigenereCipher/) and [&#128297; repository](https://github.com/psb-david-petty/mit-app-inventor/tree/master/CaesarVigenereCipher) for this page.
+[&#128279; permalink](https://psb-david-petty.github.io/mit-app-inventor/CaesarVigenereCipherTemplate/) and [&#128297; repository](https://github.com/psb-david-petty/mit-app-inventor/tree/master/CaesarVigenereCipherTemplate) for this page.
