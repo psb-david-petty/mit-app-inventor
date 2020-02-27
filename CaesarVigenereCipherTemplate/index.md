@@ -2,7 +2,7 @@
 
 ## About this app
 
-`CaesarVigenereCipherTemplate` app is an enhancement to the APCSP Mobile [6.5](https://course.mobilecsp.org/mobilecsp/unit?unit=25&lesson=173) [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher) app that includes a [Vigenère cipher](https://en.wikipedia.org/wiki/Vigenère_cipher). Enter text in the <tt>Plaintext</tt> or <tt>Ciphertext</tt> fields and use the buttons to encrypt or decrypt. The Caesar `ListPicker` selects the shift. The Vigenère `TextBox` sets the key. <br><br><a href="https://psb-david-petty.github.io/mit-app-inventor/CaesarVigenereCipher/">https://psb-david-petty.github.io/mit-app-inventor/CaesarVigenereCipher/</a> <br><br>[https://psb-david-petty.github.io/mit-app-inventor/CaesarVigenereCipherTemplate/](https://psb-david-petty.github.io/mit-app-inventor/CaesarVigenereCipherTemplate/)
+`CaesarVigenereCipherTemplate` app is an enhancement to the APCSP Mobile [6.5](https://course.mobilecsp.org/mobilecsp/unit?unit=25&lesson=173) [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher) app that includes a [Vigenère cipher](https://en.wikipedia.org/wiki/Vigenère_cipher). Enter text in the <tt>Plaintext</tt> or <tt>Ciphertext</tt> fields and use the buttons to encrypt or decrypt. The Caesar `ListPicker` selects the shift. The Vigenère `TextBox` sets the key.
 
 ## Code
 
