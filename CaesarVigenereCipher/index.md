@@ -8,7 +8,7 @@
 
 [![CaesarVigenereCipher template blocks](./CaesarVigenereCipher.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/CaesarVigenereCipher/CaesarVigenereCipher.png)
 
-This is a *template* app, with [stubs](http://catb.org/jargon/html/S/stubroutine.html) for `caesar` and `vigenere`, the actual encrypt / decrypt procedures, as well as `shift`.
+This is a *template* app, with [stubs](http://catb.org/jargon/html/S/stubroutine.html) for `caesar` and `vigenere` &mdash; the actual encrypt / decrypt procedures &mdash; as well as `shift`.
 
 - Abstracting the `shift` procedure so that it can be called with positive or negative shifts enables it to be used for encrypting and decrypting for both the [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher) and the [Vigenère cipher](https://en.wikipedia.org/wiki/Vigenère_cipher). `shift` has...
 > Preconditions:
