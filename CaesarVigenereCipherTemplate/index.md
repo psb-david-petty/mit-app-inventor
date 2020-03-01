@@ -23,7 +23,7 @@ As is usual with [APCSP Mobile](https://course.mobilecsp.org/) template apps, th
 
 ## Designer
 
-All components retain their default properties &mdash; except initial `Text` for the `ListPicker` is `0` on reset and `Width` and `Height` set to `Fill parent...` where necessary to center UX components. None of the `TextBox` components are changed on reset.
+All components retain their default properties &mdash; except initial `Text` for the `ListPicker` is `0` on reset and `Width` and `Height` are set to `Fill parent...` where necessary to center UX components. None of the `TextBox` components are changed on reset.
 
 ## Credits
 
