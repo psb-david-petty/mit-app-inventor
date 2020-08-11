@@ -6,7 +6,7 @@ The `BlankTemplate` app is a template for *any* [MIT App Inventor]() app. *Every
 
 ## Code
 
-[![Blank blocks](./Blank.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/Blank/Blank.png)
+[![BlankTemplate blocks](./BlankTemplate.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/BlankTemplate/BlankTemplate.png)
 
 - The *Reset* `Button` invokes the *reset* procedure, which is a stub. It simply sets the sets the *Debug* `Label` to text showing the `Screen1.Width` and `Screen1.Height` properties &mdash; so that it does *something* visible. Change it to initialize all components and global variables.
 
@@ -16,4 +16,4 @@ All components retain their default properties, &mdash; except `Width` and `Heig
 
 <hr>
 
-[&#128279; permalink](https://psb-david-petty.github.io/mit-app-inventor/Blank/) and [&#128297; repository](https://github.com/psb-david-petty/mit-app-inventor/tree/master/Blank) for this page.
+[&#128279; permalink](https://psb-david-petty.github.io/mit-app-inventor/BlankTemplate/) and [&#128297; repository](https://github.com/psb-david-petty/mit-app-inventor/tree/master/BlankTemplate) for this page.
