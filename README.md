@@ -4,6 +4,7 @@ Sample MIT App Inventor projects
 
 | Link | Description |
 |---|---|
+| [./APCSPExample](./APCSPExample) | The trivial `APCSPExample`app illustrates all aspects of the [APCS-P](https://apcentral.collegeboard.org/pdf/ap-csp-student-task-directions.pdf) requirements for the Create Performance Task:<br>• List storing and access used to manage the complexity of the program;<br>• A procedure w/ a parameter that is called from different places with different values and whose behavior varies based on the value of the parameter; and<br>• An algorithm that includes sequencing, selection, and repetition. |
 | [./BlankTemplate](./BlankTemplate) | The `BlankTemplate` app is a template for *any* [MIT App Inventor](http://ai2.appinventor.mit.edu/) app. |
 | [./CaesarVigenereCipherTemplate](./CaesarVigenereCipherTemplate) | The `CaesarVigenereCipherTemplate` app template is an enhancement to the APCSP Mobile [6.5](https://course.mobilecsp.org/mobilecsp/unit?unit=25&lesson=173) [Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher) app that includes a [Vigenère cipher](https://en.wikipedia.org/wiki/Vigenère_cipher). |
 | [./ImageSize](./ImageSize) | The `ImageSize` app demonstrates the delay between changing the size of an `Image` or `Canvas` and the dimensions actually changing. |
