@@ -15,7 +15,7 @@ The `APCSPExample` app is described in the `Screen1.AboutScreen`.
 
 Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apcentral.collegeboard.org/pdf/ap-computer-science-principles-2021-create-performance-task-scoring-guidelines.pdf) involves:
 
-- Row 2 &mdash; In the program code (above), the `buttons` list is *initialized* as a global variable. The `buttons` list is *used* in the *color* procedure to initialize the `Button.BackgroundColor`s of all buttons any time *any* button is clicked.
+- **Row 2** &mdash; In the program code (above), the `buttons` list is *initialized* as a global variable. The `buttons` list is *used* in the *color* procedure to initialize the `Button.BackgroundColor`s of all buttons any time *any* button is clicked.
 
 ---
 
@@ -23,7 +23,7 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 
 ---
 
--  **Row 4** &mdash; [![color blocks](./color.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/color.png){:height="25%" width="25%"} [![Button1 blocks](./Button1.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/Button1.png) The *color* procedure has a single *number* parameter which is set when it is called from each of the `Button.Clicked` handlers. **Note**: *The function of this program is trivial, so the contribution to the overall functionality of the program is also trivial.*
+-  **Row 4** &mdash; [![color blocks](./color.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/color.png){:width="200px"} [![Button1 blocks](./Button1.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/Button1.png) The *color* procedure has a single *number* parameter which is set when it is called from each of the `Button.Clicked` handlers. **Note**: *The function of this program is trivial, so the contribution to the overall functionality of the program is also trivial.*
 
 ---
 
