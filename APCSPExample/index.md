@@ -23,7 +23,7 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 
 ---
 
--  **Row 4** &mdash; [![color blocks](./color.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/color.png) [![Button1 blocks](./Button1.png){:width="100px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/Button1.png) The *color* procedure has a single *number* parameter which is set when it is called from each of the `Button.Clicked` handlers. **Note**: *The function of this program is trivial, so the contribution to the overall functionality of the program is also trivial.*
+-  **Row 4** &mdash; [![color blocks](./color.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/color.png) [![Button1 blocks](./Button1.png){:width="200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/Button1.png) The *color* procedure has a single *number* parameter which is set when it is called from each of the `Button.Clicked` handlers. **Note**: *The function of this program is trivial, so the contribution to the overall functionality of the program is also trivial.*
 
 ---
 
@@ -31,7 +31,7 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 
 ---
 
--  **Row 6** &mdash; [![Button1 blocks](./Button1.png){:width="100px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/Button1.png) [![Button2 blocks](./Button2.png){:width="100px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/Button2.png) In each call to the *color* procedure the *number* parameter is given a different value. The result of the call to [![color1 blocks](./color1.png){:width="100px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/color1.png) is to change the `Button.BackgroundColor` of `Button1`.  The result of the call to [![color2 blocks](./color2.png){:width="100px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/color2.png) is to change the `Button.BackgroundColor` of `Button2`. **Note**: *The function of this program is trivial, so the result of each call to the selected procedure is also trivial.*
+-  **Row 6** &mdash; [![Button1 blocks](./Button1.png){:width="200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/Button1.png) [![Button2 blocks](./Button2.png){:width="200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/Button2.png) In each call to the *color* procedure the *number* parameter is given a different value. The result of the call to [![color1 blocks](./color1.png){:width="200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/color1.png) is to change the `Button.BackgroundColor` of `Button1`.  The result of the call to [![color2 blocks](./color2.png){:width="200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/color2.png) is to change the `Button.BackgroundColor` of `Button2`. **Note**: *The function of this program is trivial, so the result of each call to the selected procedure is also trivial.*
 
 ## Designer
 
