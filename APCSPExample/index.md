@@ -23,7 +23,7 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 
 ---
 
--  **Row 4** &mdash; [![color blocks](./color.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/color.png){:width="200px"} [![Button1 blocks](./Button1.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/Button1.png) The *color* procedure has a single *number* parameter which is set when it is called from each of the `Button.Clicked` handlers. **Note**: *The function of this program is trivial, so the contribution to the overall functionality of the program is also trivial.*
+-  **Row 4** &mdash; [![color blocks](./color.png){:width="200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/color.png) [![Button1 blocks](./Button1.png){:width="50%"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/Button1.png) The *color* procedure has a single *number* parameter which is set when it is called from each of the `Button.Clicked` handlers. **Note**: *The function of this program is trivial, so the contribution to the overall functionality of the program is also trivial.*
 
 ---
 
