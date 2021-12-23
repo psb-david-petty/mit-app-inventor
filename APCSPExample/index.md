@@ -13,7 +13,13 @@ The `APCSPExample` app is described in the `Screen1.AboutScreen`.
 - The *Reset* `Button` invokes the *reset* procedure, which initializes all the `Button.BackgroundColor`s.
 - `Button1`, `Button2`, and `Button3` invoke the *color* procedure to (a) initialize *all* `Button.BackgroundColor`s and (b) change the `Button.BackgroundColor` for *that* `Button`.
 
+## Scoring
+
 Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apcentral.collegeboard.org/pdf/ap-computer-science-principles-2021-create-performance-task-scoring-guidelines.pdf) involves:
+
+- **Row 1** &mdash; **Note**: *The function and purpose of this program are trivial.  In order to get the point for this row, the written response must describe both the purpose of the program and the functionality demonstrated in the video. The purpose is what the program is for; the function is how it works &mdash; which are different things.*
+
+---
 
 - **Row 2** &mdash; In the program code (above), the `buttons` list is *initialized* as a global variable. The `buttons` list is *used* in the *color* procedure to initialize the `Button.BackgroundColor`s of all buttons any time *any* button is clicked.
 
