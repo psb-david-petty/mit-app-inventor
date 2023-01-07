@@ -8,7 +8,7 @@ The `APCSPStroopExample` app is described in the `Screen1.AboutScreen`.
 
 ## Code
 
-[![APCSPExample blocks](./APCSPStroopExample.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/APCSPStroopExample.png)
+[![APCSPExample blocks](./APCSPStroopExample.png){:width="1200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/APCSPStroopExample.png)
 
 - The *Reset* `Button` invokes the *reset* procedure, which invokes the *stroop* procedure to shuffle the color names and their colors.
 - `Button1`, `Button2`, `Button3`, `Button4`, `Button5`, `Button6`, and `Button7` do nothing, but provide the canvas for the names and their colors.
@@ -19,7 +19,7 @@ The `APCSPStroopExample` app is described in the `Screen1.AboutScreen`.
 
 Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apcentral.collegeboard.org/media/pdf/ap22-sg-computer-science-principles.pdf) involves:
 
-###Row 1###
+### Row 1
 
 - The purpose of the program is to demonstrate the [Stroop Effect](https://en.wikipedia.org/wiki/Stroop_effect), '&hellip;the delay in reaction time between congruent and incongruent stimuli.' The classic experiment demonstrated by John Ridley Stroop in 1935 asks subjects to say the *color* of the text under two conditions: where the color matches the text and where the color does not match the text.
 - The function of the program is to present the user with a shuffled list of color names with *matching* colors or a shuffled list of color names with *shuffled* colors so they can administer the Stroop test.
@@ -27,7 +27,7 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 
 ---
 
-###Row 2###
+### Row 2
 
 [![stroop blocks](./stroop.png){:width="800px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/stroop.png)
 
