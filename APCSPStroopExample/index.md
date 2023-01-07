@@ -19,14 +19,20 @@ The `APCSPStroopExample` app is described in the `Screen1.AboutScreen`.
 
 Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apcentral.collegeboard.org/media/pdf/ap22-sg-computer-science-principles.pdf) involves:
 
-- **Row 1** &mdash; The purpose of the program is to demonstrate the [Stroop Effect](https://en.wikipedia.org/wiki/Stroop_effect), '&hellip;the delay in reaction time between congruent and incongruent stimuli.' The classic experiment demonstrated by John Ridley Stroop in 1935 asks subjects to say the *color* of the text under two conditions: where the color matches the text and where the color does not match the text. The function of the program involves clicking the two `Button`s: *Matching* or *Shuffle* and saying the *color* of each of the words in turn.
+###Row 1###
+
+- The purpose of the program is to demonstrate the [Stroop Effect](https://en.wikipedia.org/wiki/Stroop_effect), '&hellip;the delay in reaction time between congruent and incongruent stimuli.' The classic experiment demonstrated by John Ridley Stroop in 1935 asks subjects to say the *color* of the text under two conditions: where the color matches the text and where the color does not match the text.
+- The function of the program is to present the user with a shuffled list of color names with *matching* colors or a shuffled list of color names with *shuffled* colors so they can administer the Stroop test.
+- The input of the program is clicking either of the two `Button`s &mdash; *Matching* or *Shuffle*. The output of the program is presenting the user with a shuffled list of color names with *matching* colors (when the *Matching* `Button` is clicked) or a shuffled list of color names with *shuffled* colors (when the *Shuffled* `Button` is clicked).
 
 ---
 
-[![stroop blocks](./stroop.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/stroop.png)
+###Row 2###
+
+[![stroop blocks](./stroop.png){:width="800px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/stroop.png)
 
 
-- **Row 2** &mdash; In the program code for the `stroop` procedure (above), the `nameIndexes` list is *initialized* as a local variable by the *shuffle* procedure, shuffling a range of integers. In the program code for the `stroop` procedure (above), the `nameIndexes ` list is *used*, in turn, by the *shuffle* procedure to initialize another local variable (`colorIndexes`), shuffling the `nameIndexes` list. For example, because shuffling is random, the `stroop` procedure might generate the following 7-element lists:
+- In the program code for the `stroop` procedure (above), the `nameIndexes` list is *initialized* as a local variable by the *shuffle* procedure, shuffling a range of integers. In the program code for the `stroop` procedure (above), the `nameIndexes ` list is *used*, in turn, by the *shuffle* procedure to initialize another local variable (`colorIndexes`), shuffling the `nameIndexes` list. For example, because shuffling is random, the `stroop` procedure might generate the following 7-element lists:
 
 | List | Index `1` | Index `2` | Index `3` | Index `4` | Index `5` | Index `6` | Index `7` |
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -34,9 +40,8 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 | **`nameIndexes`** | `7` | `1` | `6` | `3` | `4` | `5` | `2` |
 | **`colorIndexes`** | `6` | `7` | `2` | `4` | `5` | `3` | `1` |
 
-+
-So as to not present the same Stroop test to the user every time, the `nameIndexes` list represents the shuffled names of colors. In the example, `Button` #1 will have the color *name* at index `7` and the *color* at index `6`,  `Button` #2 will have the color *name* at index `1` and the *color* at index `7`, *etc.* This assumes that the global `names` list and the global `colors` list (shown in the program code above) are parallel lists with corresponding elements.
-+
+
+- So as to not present the same Stroop test to the user every time, the `nameIndexes` list represents the shuffled names of colors. In the example, `Button` #1 will have the color *name* at index `7` and the *color* at index `6`,  `Button` #2 will have the color *name* at index `1` and the *color* at index `7`, *etc.* This assumes that the global `names` list and the global `colors` list (shown in the program code above) are parallel lists with corresponding elements.
 
 ---
 
