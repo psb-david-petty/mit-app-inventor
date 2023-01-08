@@ -55,13 +55,20 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 
 [![swapVariables blocks](./swapVariables-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/swapVariables-blocks.png)
 
-- This approach is *clearly* more complex even with only three variables, while a typical Stroop Test involves seven or more elements. Such a procedure would be proportionately more complex and would require code changes for every added element, whereas adding to the global `names` and the global `colors` parallel lists would not require program changes.
+- This approach is *clearly* more complex even with only three variables, while a typical Stroop Test involves seven or more elements. Such a procedure would be proportionately more complex and would require code changes for every added element, whereas adding to the global `names` and the global `colors` parallel lists would not require program code changes.
 
 ---
 
 ### Row 4
 
--  **Row 4** &mdash; [![color blocks](./color.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/color.png) [![Button1 blocks](./Button1.png){:width="200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/Button1.png) The *color* procedure has a single *number* parameter which is set when it is called from each of the `Button.Clicked` handlers. **Note**: *The function of this program is trivial, so the contribution to the overall functionality of the program is also trivial.*
+[![shuffle blocks](./shuffle-blocks.png){:width="800px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/shuffle-blocks.png)
+
+- The `shuffle` procedure (above) is a student-developed procedure with at least one parameter that has an effect on the functionality of the procedure. The parameter `copyList?` is a Boolean value that determines whether the `rearranged` local variable list is a copy of the `list` parameter or whether the `rearranged` local variable list is a reference to the `list` parameter which is shuffled in place.
+
+[![stroop blocks](./stroop-blocks.png){:width="800px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/stroop-blocks.png)
+
+- The `stroop` procedure (above) shows where the student-developed procedure (`shuffle`) is called &mdash; twice. Once to create the shuffled `nameIndexs` list and once to create the shuffled `colorIndexes` list. 
+- The `shuffle` student-developed procedure (above) shuffles the 
 
 ---
 
