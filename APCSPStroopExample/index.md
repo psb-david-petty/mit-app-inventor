@@ -65,7 +65,7 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 
 - The `stroop` procedure (above) is a student-developed procedure with at least one parameter that has an effect on the functionality of the procedure. The parameter `shuffle?` is a Boolean value that determines whether the `colorIndexes` local-variable list is a shuffled copy of the `nameIndexes` local-variable list or whether the `colorIndexes` local-variable list is a reference to the `nameIndexes` parameter and not shuffled relative to it.
 
-[![ButtonMatching.Click blocks](./ButtonMatching.Click-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/ButtonMatching.Click-blocks.png) [![ButtonShuffled.Click blocks](./ButtonShuffled.Click-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/ButtonShuffled.Click-blocks.png)
+[![ButtonMatching.Click blocks](./ButtonMatching.Click-blocks.png){:width="200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/ButtonMatching.Click-blocks.png) [![ButtonShuffled.Click blocks](./ButtonShuffled.Click-blocks.png){:width="200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/ButtonShuffled.Click-blocks.png)
 
 - The `ButtonMatching.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `false` parameter &mdash; resulting in the shuffled color *names* matching the *colors*. The `ButtonShuffled.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `true` parameter &mdash; resulting in the shuffled color *names* not matching the *colors*. 
 
@@ -86,7 +86,7 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 
 ### Row 6
 
-[![ButtonMatching.Click blocks](./ButtonMatching.Click-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/ButtonMatching.Click-blocks.png) [![ButtonShuffled.Click blocks](./ButtonShuffled.Click-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/ButtonShuffled.Click-blocks.png)
+[![ButtonMatching.Click blocks](./ButtonMatching.Click-blocks.png){:width="200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/ButtonMatching.Click-blocks.png) [![ButtonShuffled.Click blocks](./ButtonShuffled.Click-blocks.png){:width="200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/ButtonShuffled.Click-blocks.png)
 
 - The `ButtonMatching.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `false` parameter &mdash; resulting in the shuffled color *names* matching the *colors*.
 - The `ButtonShuffled.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `true` parameter &mdash; resulting in the shuffled color *names* not matching the *colors*. 
