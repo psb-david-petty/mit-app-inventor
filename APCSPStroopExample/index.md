@@ -53,7 +53,7 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 
 -  In the program code for the `shuffle` procedure (above), the heart of [Satollo's Algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#Sattolo's_algorithm) is in swapping the elements of the list(s). This manages the complexity of the program code, because the alternative to the program code for the `swap` procedure (above), is to use a fixed number of (global) variables to achieve the same result. For example, even with *three* elements (global variables `element1`, `element2`, `element3`), the code for an example `swapVariables` procedure could be:
 
-[![stroop blocks](./swapVariables-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/swapVariables-blocks.png)
+[![swapVariables blocks](./swapVariables-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/swapVariables-blocks.png)
 
 - This approach is *clearly* more complex even with only three variables, while a typical Stroop Test involves seven or more elements. Such a procedure would be proportionately more complex and would require code changes for every added element, whereas adding to the global `names` and the global `colors` parallel lists would not require program changes.
 
