@@ -33,7 +33,7 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 
 
 - The `nameIndexes` list is a local variable both *initialized* and *used* in the program code for the `stroop` procedure (above) to partially fulfill the programs purpose and to manage its complexity.
-- In the program code for the `stroop` procedure (above), the `nameIndexes` list is *initialized* as a local variable by the *shuffle* procedure, shuffling a range of integers. In the program code for the `stroop` procedure (above), the `nameIndexes ` list is *used*, in turn, by the `shuffle` procedure to initialize another local variable (`colorIndexes`), shuffling the `nameIndexes` list. For example, because shuffling is random, the `stroop` procedure might generate the following 7-element lists:
+- In the program code for the `stroop` procedure (above), the `nameIndexes` list is *initialized* as a local variable by the `shuffle` procedure, shuffling a range of integers. In the program code for the `stroop` procedure (above), the `nameIndexes ` list is *used*, in turn, by the `stroop` procedure to initialize another local variable (`colorIndexes`), shuffling a copy of the `nameIndexes` list if the `shuffle?` parameter is `true`. For example, because shuffling is random, the `stroop` procedure might generate the following 7-element lists:
 
 | List | Index `1` | Index `2` | Index `3` | Index `4` | Index `5` | Index `6` | Index `7` |
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -42,7 +42,7 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 | **`colorIndexes`** | `6` | `7` | `2` | `4` | `5` | `3` | `1` |
 
 
-- So as to not present the same Stroop test to the user every time, the `nameIndexes` list represents the shuffled names of colors. In the example, the `Button` at index `1` will have the color *name* at index `7` and the *color* at index `6`,  the `Button` at index `2` will have the color *name* at index `1` and the *color* at index `7`, *etc.* This assumes that the global `names` list and the global `colors` list (shown in the program code above) are parallel lists with corresponding elements.
+- So as to not present the same Stroop test to the user every time, the `nameIndexes` list represents the shuffled names of colors and the `colorIndexes` list (which is the shuffled `nameIndexes` list when the `shuffle?` parameter is `true`) represents the colors of the names. In the example, the `Button` at index `1` will have the color *name* at index `7` and the *color* at index `6`,  the `Button` at index `2` will have the color *name* at index `1` and the *color* at index `7`, *etc.* This assumes that the global `names` list and the global `colors` list (shown in the program code above) are parallel lists with corresponding elements.
 
 ---
 
@@ -51,30 +51,36 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 [![shuffle blocks](./shuffle-blocks.png){:width="800px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/shuffle-blocks.png)
 [![swap blocks](./swap-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/swap-blocks.png)
 
--  In the program code for the `shuffle` procedure (above), the heart of [Satollo's Algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#Sattolo's_algorithm) is in swapping the elements of the list(s). This manages the complexity of the program code, because the alternative to the program code for the `swap` procedure (above), is to use a fixed number of (global) variables to achieve the same result. For example, even with *three* elements (global variables `element1`, `element2`, `element3`), the code for an example `swapVariables` procedure could be:
+-  In the program code for the `shuffle` procedure (above), the heart of [Satollo's Algorithm](https://en.wikipedia.org/wiki/Fisher–Yates_shuffle#Sattolo's_algorithm) is in swapping the elements of the list(s). This manages the complexity of the program code, because the alternative to the program code for the `swap` procedure (above), is to use a fixed number of (global) variables to achieve the same result. For example, even with only *three* elements (global variables `element1`, `element2`, `element3`), the code for an example `swapVariables` procedure could be:
 
 [![swapVariables blocks](./swapVariables-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/swapVariables-blocks.png)
 
-- This approach is *clearly* more complex even with only three variables, while a typical Stroop Test involves seven or more elements. Such a procedure would be proportionately more complex and would require code changes for every added element, whereas adding to the global `names` and the global `colors` parallel lists would not require program code changes.
+- This approach is *clearly* more complex even with only three variables, while a typical Stroop Test involves seven or more elements. Such a procedure would be quadratically more complex and would require code changes for every added element, whereas adding to the global `names` and the global `colors` parallel lists would not require any program code changes.
 
 ---
 
 ### Row 4
 
-[![shuffle blocks](./shuffle-blocks.png){:width="800px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/shuffle-blocks.png)
-
-- The `shuffle` procedure (above) is a student-developed procedure with at least one parameter that has an effect on the functionality of the procedure. The parameter `copyList?` is a Boolean value that determines whether the `rearranged` local variable list is a copy of the `list` parameter or whether the `rearranged` local variable list is a reference to the `list` parameter which is shuffled in place.
-
 [![stroop blocks](./stroop-blocks.png){:width="800px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/stroop-blocks.png)
 
-- The `stroop` procedure (above) shows where the student-developed procedure (`shuffle`) is called &mdash; twice. Once to create the shuffled `nameIndexs` list and once to create the shuffled `colorIndexes` list. 
-- The `shuffle` student-developed procedure (above) shuffles the 
+- The `stroop` procedure (above) is a student-developed procedure with at least one parameter that has an effect on the functionality of the procedure. The parameter `shuffle?` is a Boolean value that determines whether the `colorIndexes` local variable list is a shuffled copy of the `nameIndexes` local variable list or whether the `colorIndexes` local variable list is a reference to the `nameIndexes` parameter and not shuffled relative to it.
+
+[![ButtonMatching.Click blocks](./ButtonMatching.Click-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/ButtonMatching.Click-blocks.png) [![ButtonShuffled.Click blocks](./ButtonShuffled.Click-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/ButtonShuffled.Click-blocks.png)
+
+- The `ButtonMatching.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `false` parameter &mdash; so the color *names* match the *colors*. The `ButtonShuffled.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `true` parameter &mdash; so the color *names* do not match the *colors*. 
 
 ---
 
 ### Row 5
 
--  **Row 5** &mdash; [![color blocks](./color.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/color.png) The *color* procedure initializes the `Button.BackgroundColor`s of *all* buttons by iterating through the `buttons` list setting the `Button.BackgroundColor` of each `Button` in turn. The rest of the sequence of blocks in the *color* procedure consists of a series of selections that test the value of the `number` parameter and react differently (set the `Button.BackgroundColor` of a differnt `Button`) based on its value.
+[![stroop blocks](./stroop-blocks.png){:width="800px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/stroop-blocks.png)
+
+- The `stroop` procedure (above) is a student-developed algorithm that includes sequencing (more than one program block), selection (an `if / else` block that either shuffles or does not shuffle the `nameIndexes` local variable list), and iteration (a `for each` counted loop that sets the properties of `Button`s in the global variable `buttons` list.
+- To set up a Stroop Test, the student-developed algorithm works as follows:
+ - Given three global-variable, fixed, parallel lists with corresponding elements. The lists are: `buttons` (containing references to the buttons whose text and text colors are to be modified), `names` (containing color names), and `colors` (containing colors corresponding to the color names).
+ - Create two lists corresponding to the *indexes* of the `names` and `colors` lists. The `nameIndexes` list (the *indexes* of the `names` list) is shuffled relative to the indexes in order. The `colorIndexes` list (the *indexes* of the `colors` list) is either shuffled relative to the `nameIndexes` list (in the *shuffled* Stroop Test) or not shuffled relative to the `nameIndexes` list (in the *matching* Stroop Test).
+ - Iterate through the `buttons` list, setting the *text* for each button to the name referred to in the `names` list indexed indirectly by the index in the corresponding position in the `nameIndexes` list and setting the *color* for each button to the color referred to in the `colors` list indexed indirectly by the index in the corresponding position in the `colorIndexes` list.
+ - The `shuffle` procedure is a version of [Satollo's Algorithm](https://en.wikipedia.org/wiki/Fisher–Yates_shuffle#Sattolo's_algorithm) that shuffles lists in place.
 
 ---
 
