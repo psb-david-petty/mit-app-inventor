@@ -8,7 +8,7 @@ The `APCSPStroopExample` app is described in the `Screen1.AboutScreen`.
 
 ## Code
 
-[![APCSPExample blocks](./APCSPStroopExample.png){:width="1200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/APCSPStroopExample.png)
+[![APCSPExample blocks](./APCSPStroopExample.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/APCSPStroopExample.png)
 
 - The *Reset* `Button` invokes the *reset* procedure, which invokes the *stroop* procedure to shuffle the color names and their colors.
 - `Button1`, `Button2`, `Button3`, `Button4`, `Button5`, `Button6`, and `Button7` do nothing, but provide the canvas for the names and their colors.
@@ -29,10 +29,11 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 
 ### Row 2
 
-[![stroop blocks](./stroop.png){:width="800px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/stroop.png)
+[![stroop blocks](./stroop-blocks.png){:width="800px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/stroop-blocks.png)
 
 
-- In the program code for the `stroop` procedure (above), the `nameIndexes` list is *initialized* as a local variable by the *shuffle* procedure, shuffling a range of integers. In the program code for the `stroop` procedure (above), the `nameIndexes ` list is *used*, in turn, by the *shuffle* procedure to initialize another local variable (`colorIndexes`), shuffling the `nameIndexes` list. For example, because shuffling is random, the `stroop` procedure might generate the following 7-element lists:
+- The `nameIndexes` list is a local variable both *initialized* and *used* in the program code for the `stroop` procedure (above) to partially fulfill the programs purpose and to manage its complexity.
+- In the program code for the `stroop` procedure (above), the `nameIndexes` list is *initialized* as a local variable by the *shuffle* procedure, shuffling a range of integers. In the program code for the `stroop` procedure (above), the `nameIndexes ` list is *used*, in turn, by the `shuffle` procedure to initialize another local variable (`colorIndexes`), shuffling the `nameIndexes` list. For example, because shuffling is random, the `stroop` procedure might generate the following 7-element lists:
 
 | List | Index `1` | Index `2` | Index `3` | Index `4` | Index `5` | Index `6` | Index `7` |
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -47,7 +48,14 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 
 ### Row 3
 
--  All `Button` components that have their colors' changed are stored in the `buttons` list. Storing the `Button` components in a list obviates the need for individual variables for each component and facilitates adding additional `Button` components with additional functionality without making major changes to the code.
+[![stroop blocks](./shuffle-blocks.png){:width="800px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/shuffle-blocks.png)
+[![stroop blocks](./swap-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/swap-blocks.png)
+
+-  In the program code for the `shuffle` procedure (above), the heart of [Satollo's Algorithm](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle#Sattolo's_algorithm) is swapping elements of the list. This manages the complexity of the program code, because the alternative to the program code for the `swap` procedure (above), is to use a fixed number of (global) variables to achieve the same result. For example, even with *three* elements (global variables `element1`, `element2`, `element3`), the code for an example `swapVariables` procedure could be:
+
+[![stroop blocks](./swapVariables-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/swapVariables-blocks.png)
+
+- This approach is *clearly* more complex even with only three variables, while a typical Stroop Test involves seven or more elements. Such a procedure would be proportionately more complex and would require code changes for every added element, whereas adding to the global `names` and the global `colors` parallel lists would not require program changes.
 
 ---
 
