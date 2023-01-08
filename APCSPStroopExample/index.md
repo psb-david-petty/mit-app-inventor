@@ -55,7 +55,7 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 
 [![swapVariables blocks](./swapVariables-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/swapVariables-blocks.png)
 
-- This approach is *clearly* more complex even with only three variables, while a typical Stroop Test involves seven or more elements. Such a procedure would be quadratically more complex and would require code changes for every added element, whereas adding to the global `names` and the global `colors` parallel lists would not require any program code changes.
+- This approach is *clearly* more complex even with only three variables, while a typical Stroop Test involves seven or more elements. Such a procedure would be quadratically more complex and would require code changes for every added element, whereas adding to the global `names` and the global `colors` parallel lists with corresponding elements would not require any program code changes.
 
 ---
 
@@ -63,11 +63,11 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 
 [![stroop blocks](./stroop-blocks.png){:width="800px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/stroop-blocks.png)
 
-- The `stroop` procedure (above) is a student-developed procedure with at least one parameter that has an effect on the functionality of the procedure. The parameter `shuffle?` is a Boolean value that determines whether the `colorIndexes` local variable list is a shuffled copy of the `nameIndexes` local variable list or whether the `colorIndexes` local variable list is a reference to the `nameIndexes` parameter and not shuffled relative to it.
+- The `stroop` procedure (above) is a student-developed procedure with at least one parameter that has an effect on the functionality of the procedure. The parameter `shuffle?` is a Boolean value that determines whether the `colorIndexes` local-variable list is a shuffled copy of the `nameIndexes` local-variable list or whether the `colorIndexes` local-variable list is a reference to the `nameIndexes` parameter and not shuffled relative to it.
 
 [![ButtonMatching.Click blocks](./ButtonMatching.Click-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/ButtonMatching.Click-blocks.png) [![ButtonShuffled.Click blocks](./ButtonShuffled.Click-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/ButtonShuffled.Click-blocks.png)
 
-- The `ButtonMatching.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `false` parameter &mdash; so the color *names* match the *colors*. The `ButtonShuffled.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `true` parameter &mdash; so the color *names* do not match the *colors*. 
+- The `ButtonMatching.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `false` parameter &mdash; resulting in the shuffled color *names* matching the *colors*. The `ButtonShuffled.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `true` parameter &mdash; resulting in the shuffled color *names* not matching the *colors*. 
 
 ---
 
@@ -75,7 +75,7 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 
 [![stroop blocks](./stroop-blocks.png){:width="800px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/stroop-blocks.png)
 
-- The `stroop` procedure (above) is a student-developed algorithm that includes sequencing (more than one program block), selection (an `if / else` block that either shuffles or does not shuffle the `nameIndexes` local variable list), and iteration (a `for each` counted loop that sets the properties of `Button`s in the global variable `buttons` list.
+- The `stroop` procedure (above) is a student-developed algorithm that includes sequencing (more than one program block), selection (an `if / else` block that either shuffles or does not shuffle the `nameIndexes` local-variable list), and iteration (a `for each` counted loop that sets the properties of `Button`s in the `buttons` global-variable list.
 - To set up a Stroop Test, the student-developed algorithm works as follows:
  - Given three global-variable, fixed, parallel lists with corresponding elements. The lists are: `buttons` (containing references to the buttons whose text and text colors are to be modified), `names` (containing color names), and `colors` (containing colors corresponding to the color names).
  - Create two lists corresponding to the *indexes* of the `names` and `colors` lists. The `nameIndexes` list (the *indexes* of the `names` list) is shuffled relative to the indexes in order. The `colorIndexes` list (the *indexes* of the `colors` list) is either shuffled relative to the `nameIndexes` list (in the *shuffled* Stroop Test) or not shuffled relative to the `nameIndexes` list (in the *matching* Stroop Test).
@@ -86,7 +86,10 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 
 ### Row 6
 
--  **Row 6** &mdash; [![Button1 blocks](./Button1.png){:width="200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/Button1.png) [![Button2 blocks](./Button2.png){:width="200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/Button2.png) In each call to the *color* procedure the *number* parameter is given a different value. The result of the call to [![color1 blocks](./color1.png){:width="200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/color1.png) is to change the `Button.BackgroundColor` of `Button1`.  The result of the call to [![color2 blocks](./color2.png){:width="200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPExample/color2.png) is to change the `Button.BackgroundColor` of `Button2`. **Note**: *The function of this program is trivial, so the result of each call to the selected procedure is also trivial.*
+[![ButtonMatching.Click blocks](./ButtonMatching.Click-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/ButtonMatching.Click-blocks.png) [![ButtonShuffled.Click blocks](./ButtonShuffled.Click-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/ButtonShuffled.Click-blocks.png)
+
+- The `ButtonMatching.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `false` parameter &mdash; resulting in the shuffled color *names* matching the *colors*.
+- The `ButtonShuffled.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `true` parameter &mdash; resulting in the shuffled color *names* not matching the *colors*. 
 
 ## Designer
 
