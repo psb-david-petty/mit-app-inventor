@@ -17,7 +17,7 @@ The `APCSPStroopExample` app is described in the `Screen1.AboutScreen`.
 
 ## Scoring
 
-Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apcentral.collegeboard.org/media/pdf/ap22-sg-computer-science-principles.pdf) involves:
+Meeting the criteria for the *APCS-P Create Performance Task* by completing [written responses](https://apcentral.collegeboard.org/media/pdf/ap-csp-student-task-directions.pdf#page=7) 3a (i-iii), 3b (i-v), 3c (i-iv), and 3d (i-iii) to meet the requirements of the [scoring guidelines](https://apcentral.collegeboard.org/media/pdf/ap22-sg-computer-science-principles.pdf) involves:
 
 ### Row 1
 
@@ -32,8 +32,11 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 [![stroop blocks](./stroop-blocks.png){:width="800px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/stroop-blocks.png)
 
 
-- The `nameIndexes` list is a local variable both *initialized* and *used* in the program code for the `stroop` procedure (above) to partially fulfill the programs purpose and to manage its complexity.
-- In the program code for the `stroop` procedure (above), the `nameIndexes` list is *initialized* as a local variable by the `shuffle` procedure, shuffling a range of integers. In the program code for the `stroop` procedure (above), the `nameIndexes ` list is *used*, in turn, by the `stroop` procedure to initialize another local variable (`colorIndexes`), shuffling a copy of the `nameIndexes` list if the `shuffle?` parameter is `true`. For example, because shuffling is random, the `stroop` procedure might generate the following 7-element lists:
+- The `nameIndexes` list is a local variable both *stored* and *used* in the program code for the `stroop` procedure (above) to partially fulfill the programs purpose.
+- In the program code for the `stroop` procedure (above), the `nameIndexes` list is *stored* as a local variable by the `shuffle` procedure, shuffling a range of integers. 
+- In the program code for the `stroop` procedure (above), the `nameIndexes ` list is *used*, in turn, by the `stroop` procedure to initialize another local variable (`colorIndexes`), shuffling a copy of the `nameIndexes` list if the `shuffle?` parameter is `true`.
+
+ For example, because shuffling is random (and if the `shuffle?` parameter is `true`) the `stroop` procedure might generate the following 7-element lists:
 
 | List | Index `1` | Index `2` | Index `3` | Index `4` | Index `5` | Index `6` | Index `7` |
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -51,7 +54,7 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 [![shuffle blocks](./shuffle-blocks.png){:width="800px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/shuffle-blocks.png)
 [![swap blocks](./swap-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/swap-blocks.png)
 
--  In the program code for the `shuffle` procedure (above), the heart of [Satollo's Algorithm](https://en.wikipedia.org/wiki/Fisher–Yates_shuffle#Sattolo's_algorithm) is in swapping the elements of the list(s). This manages the complexity of the program code, because the alternative to the program code for the `swap` procedure (above), is to use a fixed number of (global) variables to achieve the same result. For example, even with only *three* elements (global variables `element1`, `element2`, `element3`), the code for an example `swapVariables` procedure could be:
+-  In the program code for the `shuffle` procedure (above), the heart of [Satollo's Algorithm](https://en.wikipedia.org/wiki/Fisher–Yates_shuffle#Sattolo's_algorithm) is in swapping the elements of the list(s). Using list(s) to contain the shuffled elements manages the complexity of the program code, because the alternative to the program code for the `swap` procedure (above) which swaps the elements of the list(s), is to use a fixed number of (global) variables to achieve the same result. For example, even with only *three* elements (global variables `element1`, `element2`, `element3`), the code for an example `swapVariables` procedure could be:
 
 [![swapVariables blocks](./swapVariables-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/swapVariables-blocks.png)
 
@@ -88,8 +91,8 @@ Meeting the criteria for the APCS-P Create Performance Task [rubric](https://apc
 
 [![ButtonMatching.Click blocks](./ButtonMatching.Click-blocks.png){:width="200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/ButtonMatching.Click-blocks.png) [![ButtonShuffled.Click blocks](./ButtonShuffled.Click-blocks.png){:width="200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/ButtonShuffled.Click-blocks.png)
 
-- The `ButtonMatching.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `false` parameter &mdash; resulting in the shuffled color *names* matching the *colors*.
-- The `ButtonShuffled.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `true` parameter &mdash; resulting in the shuffled color *names* not matching the *colors*. 
+- The `ButtonMatching.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `false` value for the `shuffle?` parameter &mdash; which is tested prior to shuffling the `colorIndexes` local-variable list resulting in the shuffled color *names* matching the *colors*.
+- The `ButtonShuffled.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `true` value for the `shuffle?` parameter &mdash; which is tested prior to shuffling the `colorIndexes` local-variable list resulting in the shuffled color *names* not matching the *colors*. 
 
 ## Designer
 
