@@ -36,7 +36,7 @@ Meeting the criteria for the *APCS-P Create Performance Task* by completing [wri
 - In the program code for the `stroop` procedure (above), the `nameIndexes` list is *stored* as a local variable by the `shuffle` procedure, shuffling a range of integers. 
 - In the program code for the `stroop` procedure (above), the `nameIndexes ` list is *used*, in turn, by the `stroop` procedure to initialize another local variable (`colorIndexes`), shuffling a copy of the `nameIndexes` list if the `shuffle?` parameter is `true`.
 
- For example, because shuffling is random (and if the `shuffle?` parameter is `true`) the `stroop` procedure might generate the following 7-element lists:
+  For example, because shuffling is random (and if the `shuffle?` parameter is `true`) the `stroop` procedure might generate the following 7-element lists:
 
 | List | Index `1` | Index `2` | Index `3` | Index `4` | Index `5` | Index `6` | Index `7` |
 | --- | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
