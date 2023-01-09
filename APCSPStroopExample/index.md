@@ -70,7 +70,7 @@ Meeting the criteria for the *APCS-P Create Performance Task* by completing [wri
 
 [![ButtonMatching.Click blocks](./ButtonMatching.Click-blocks.png){:width="200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/ButtonMatching.Click-blocks.png) [![ButtonShuffled.Click blocks](./ButtonShuffled.Click-blocks.png){:width="200px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/ButtonShuffled.Click-blocks.png)
 
-- The `ButtonMatching.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `false` parameter &mdash; resulting in the shuffled color *names* matching the *colors*. The `ButtonShuffled.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `true` parameter &mdash; resulting in the shuffled color *names* not matching the *colors*. 
+- The `ButtonMatching.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `false` value for the `shuffle?` parameter &mdash; which is tested prior to shuffling the `colorIndexes` local-variable list resulting in the shuffled color *names* matching the *colors*. The `ButtonShuffled.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `true` value for the `shuffle?` parameter &mdash; which is tested prior to shuffling the `colorIndexes` local-variable list resulting in the shuffled color *names* not matching the *colors*.  
 
 ---
 
