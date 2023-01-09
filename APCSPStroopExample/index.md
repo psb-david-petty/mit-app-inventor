@@ -58,7 +58,7 @@ Meeting the criteria for the *APCS-P Create Performance Task* by completing [wri
 
 [![swapVariables blocks](./swapVariables-blocks.png){:width="400px"}](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/swapVariables-blocks.png)
 
-- This approach is *clearly* more complex even with only three variables, while a typical Stroop Test involves seven or more elements. Such a procedure would be quadratically more complex and would require code changes for every added element, whereas adding to the global `names` and the global `colors` parallel lists with corresponding elements would not require any program code changes.
+- This approach is *clearly* more complex even with only three elements, while a typical Stroop Test involves seven or more elements. Such a procedure is quadratically complex &mdash; &#x1D442;(n<sup>2</sup>) &mdash; and would require code changes for every added element, whereas adding to the global `names` and the global `colors` parallel lists with new corresponding elements would not require any program code changes.
 
 ---
 
