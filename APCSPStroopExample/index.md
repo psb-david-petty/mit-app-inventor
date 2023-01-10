@@ -94,6 +94,11 @@ Meeting the criteria for the *APCS-P Create Performance Task* by completing [wri
 - The `ButtonMatching.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `false` value for the `shuffle?` parameter &mdash; which is tested prior to shuffling the `colorIndexes` local-variable list resulting in the shuffled color *names* matching the *colors*.
 - The `ButtonShuffled.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `true` value for the `shuffle?` parameter &mdash; which is tested prior to shuffling the `colorIndexes` local-variable list resulting in the shuffled color *names* not matching the *colors*. 
 
+## Color notes
+
+- The purple color is [*Rebecca Purple*](https://medium.com/@valgaze/the-hidden-purple-memorial-in-your-web-browser-7d84813bb416), which is a tribute to Eric Meyer's daughter Rebecca.
+- The orange color is [*Swamp Holly Orange*](http://patentplaques-blog.com/why-is-yellow-transit-logo-orange/), which is the the color of the logotype of *Yellow Transit* (and is also paint color [60039](https://t.ly/G2s1)).
+
 ## Designer
 
 All components retain their default properties, &mdash; except `Width` and `Height` set to `Fill parent...` where necessary to center UX components, `Button` text(s) changed from their defaults(s), and `Screen1.AboutScreen` set to the explanatory text (above).
