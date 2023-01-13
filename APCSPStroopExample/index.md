@@ -6,7 +6,7 @@ The `APCSPStroopExample` app is described in the `Screen1.AboutScreen`.
 
 > This app ​demonstrates '&hellip;the delay in reaction time between congruent and incongruent stimuli​' known as the <a href="https://en.wikipedia.org/wiki/Stroop_effect">Stroop Effect</a> &mdash; try​ to say the <strong>color</strong> of the word, not the word itself.​ <br><br>The app illustrates all aspects of the APCS-P requirements for the Create Performance Task:<br>• List storing and access used to manage the complexity of the program;<br>• A procedure w/ a parameter that is called from different places with different values and whose behavior varies based on the value of the parameter; and<br>• An algorithm that includes sequencing, selection, and repetition.
 
-## Code
+## Code (PC)
 
 [![APCSPExample blocks](./APCSPStroopExample.png)](https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/APCSPStroopExample.png)
 
@@ -15,9 +15,9 @@ The `APCSPStroopExample` app is described in the `Screen1.AboutScreen`.
 - The *Matching* `Button` invokes the *stroop* procedure with a flag specifying that the word colors match the word names.
 - The *Shuffled* `Button` invokes the *stroop* procedure with a flag specifying that the word colors *do not* match the word names.
 
-## Scoring
+## Written response (WR)
 
-Meeting the criteria for the *APCS-P Create Performance Task* by completing [written responses](https://apcentral.collegeboard.org/media/pdf/ap-csp-student-task-directions.pdf#page=7) 3a (i-iii), 3b (i-v), 3c (i-iv), and 3d (i-iii) to meet the requirements of the [scoring guidelines](https://apcentral.collegeboard.org/media/pdf/ap22-sg-computer-science-principles.pdf) involves:
+The submission for the *APCS-P Create Performance Task* includes a [written response](https://apcentral.collegeboard.org/media/pdf/ap-csp-student-task-directions.pdf#page=7) to questions 3a (i-iii), 3b (i-v), 3c (i-iv), and 3d (i-iii) to meet the requirements of the [scoring guidelines](https://apcentral.collegeboard.org/media/pdf/ap22-sg-computer-science-principles.pdf). 
 
 ### Row 1
 
@@ -93,6 +93,14 @@ Meeting the criteria for the *APCS-P Create Performance Task* by completing [wri
 
 - The `ButtonMatching.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `false` value for the `shuffle?` parameter &mdash; which is tested prior to shuffling the `colorIndexes` local-variable list resulting in the shuffled color *names* matching the *colors*.
 - The `ButtonShuffled.Click` event (above) shows where the student-developed procedure (`stroop`) is called with a `true` value for the `shuffle?` parameter &mdash; which is tested prior to shuffling the `colorIndexes` local-variable list resulting in the shuffled color *names* not matching the *colors*. 
+
+---
+
+## Video (V)
+
+The submission for the *APCS-P Create Performance Task* includes a [video](https://apcentral.collegeboard.org/media/pdf/ap-csp-student-task-directions.pdf#page=6) that, '&hellip;demonstrates the running of [the] program.'
+
+
 
 ## Color notes
 
