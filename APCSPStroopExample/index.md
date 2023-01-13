@@ -100,7 +100,7 @@ The submission for the *APCS-P Create Performance Task* includes a [written resp
 
 The submission for the *APCS-P Create Performance Task* includes a [video](https://apcentral.collegeboard.org/media/pdf/ap-csp-student-task-directions.pdf#page=6) that, '&hellip;demonstrates the running of [the] program.'
 
-https://user-images.githubusercontent.com/43327098/212435832-a19b2e17-c6db-470d-8407-d803aa89d5f4.mov
+![APCSPStroopExample.mov](https://user-images.githubusercontent.com/43327098/212435832-a19b2e17-c6db-470d-8407-d803aa89d5f4.mov)
 
 ## Color notes
 
