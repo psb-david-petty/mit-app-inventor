@@ -101,8 +101,7 @@ The submission for the *APCS-P Create Performance Task* includes a [written resp
 The submission for the *APCS-P Create Performance Task* includes a [video](https://apcentral.collegeboard.org/media/pdf/ap-csp-student-task-directions.pdf#page=6) that, '&hellip;demonstrates the running of [the] program.'
 
 
-<video width="500" height="1100" style="margin: auto 0; display: block;" controls>
-  <source src=”https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/APCSPStroopExample.mov”>
+<video src="https://user-images.githubusercontent.com/43327098/212435832-a19b2e17-c6db-470d-8407-d803aa89d5f4.mov" controls="controls" style="margin: auto 0; display: block; max-width: 500px">
 </video>
 
 <iframe width="500" height="1100" style="margin: auto 0; display: block;" src=”https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/APCSPStroopExample.mov”>
