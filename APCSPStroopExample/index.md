@@ -105,6 +105,11 @@ The submission for the *APCS-P Create Performance Task* includes a [video](https
   </video>
 </div>
 
+<div style="width: 100%; display: flex; justify-content: center;">
+  <video src="https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/APCSPStroopExample.mov" controls="controls" style="width: 500px;">
+  </video>
+</div>
+
 <!--
 <iframe width="500" height="1100" style="margin: auto 0; display: block;" src=”https://github.com/psb-david-petty/mit-app-inventor/blob/master/APCSPStroopExample/APCSPStroopExample.mov”>
 </iframe>
