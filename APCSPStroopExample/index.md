@@ -21,9 +21,9 @@ The submission for the *APCS-P Create Performance Task* includes a [written resp
 
 ### Row 1
 
-- The purpose of the program is to demonstrate the [Stroop Effect](https://en.wikipedia.org/wiki/Stroop_effect), '&hellip;the delay in reaction time between congruent and incongruent stimuli.' The classic experiment demonstrated by John Ridley Stroop in 1935 asks subjects to say the *color* of the text under two conditions: where the color matches the text and where the color does not match the text.
-- The function of the program is to present the user with a shuffled list of color names with *matching* colors or a shuffled list of color names with *shuffled* colors so they can administer the Stroop test.
-- The input of the program is clicking either of the two `Button`s &mdash; *Matching* or *Shuffle*. The output of the program is presenting the user with a shuffled list of color names with *matching* colors (when the *Matching* `Button` is clicked) or a shuffled list of color names with *shuffled* colors (when the *Shuffled* `Button` is clicked).
+- The purpose of the program is to demonstrate the [Stroop Effect](https://en.wikipedia.org/wiki/Stroop_effect), '&hellip;the delay in reaction time between congruent and incongruent stimuli' used as part of a [concussion protocol](https://my.clevelandclinic.org/health/diagnostics/22267-concussion-test#test-details) to help evaluate potential concussions. The classic experiment demonstrated by John Ridley Stroop in 1935 asks subjects to say the *color* of the text under two conditions: where the color matches the text and where the color does not match the text. The ability of subjects to correctly name the colors &mdash; and the speed with which they perform &mdash; is an indication of neurological function.
+- The function of the program is to present subjects with a shuffled list of color names with *matching* colors or a shuffled list of color names with *shuffled* colors so they can administer the Stroop test.
+- The input of the program is clicking either of the two `Button`s &mdash; *Matching* or *Shuffle*. The output of the program is presenting subjects with a shuffled list of color names with *matching* colors (when the *Matching* `Button` is clicked) or a shuffled list of color names with *shuffled* colors (when the *Shuffled* `Button` is clicked).
 
 ---
 
