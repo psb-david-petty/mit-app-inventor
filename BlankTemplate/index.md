@@ -16,4 +16,4 @@ All components retain their default properties, &mdash; except `Width` and `Heig
 
 <hr>
 
-[&#128279; permalink](https://psb-david-petty.github.io/mit-app-inventor/BlankTemplate/) and [&#128297; repository](https://github.com/psb-david-petty/mit-app-inventor/tree/master/BlankTemplate) for this page.
+[&#128279; permalink](https://psb-david-petty.github.io/mit-app-inventor/BlankTemplate/), [&#128297; repository](https://github.com/psb-david-petty/mit-app-inventor/tree/master/BlankTemplate), and [![MIT AI2 logo](../mit-app-inventor-2-logo-200x200.png){:width="36px"} `.AIA`](https://psb-david-petty.github.io/mit-app-inventor/BlankTemplate/BlankTemplate.aia) for this page.
